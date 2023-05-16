@@ -1,0 +1,53 @@
+.todoItem {
+  background: green;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30vw;
+}
+
+#text {
+  width: 50%;
+}
+
+.round {
+  display: flex;
+  align-items: center;
+}
+
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  width: 28px;
+}
+
+.round label:after {
+  content: "✔";
+  color: white;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: #66bb6a;
+  border-color: #66bb6a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "✔";
+  color: white;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+#checkbox {
+  display: none;
+}
